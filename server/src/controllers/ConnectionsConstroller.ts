@@ -13,7 +13,7 @@ export default class ConnectionsController {
     const { user_id } = req.body
 
     await db('connections').insert({
-      user_id,
+      user_id
     })
     return res.status(201).send()
   }
